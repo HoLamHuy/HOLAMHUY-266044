@@ -250,39 +250,22 @@ void bt13()
 	x400 = y % 400;
 	switch (m)
 	{
-	case 1:
-		printf(" thang 1 nam %d co: 31 ngay", y);
-		break;
+	case 1:	
 	case 3:
-		printf(" thang 3 nam %d co: 31 ngay", y);
+	case 5:
+	case 7:
+	case 8:
+	case 10:
+	case 12:
+    printf(" thang %d nam %d co: 31 ngay", m, y);
 		break;
 	case 4:
-		printf(" thang 4 nam %d co: 30 ngay", y);
-		break;
-	case 5:
-		printf(" thang 5 nam %d co: 31 ngay", y);
-		break;
 	case 6:
-		printf(" thang 6 nam %d co: 30 ngay", y);
-		break;
-	case 7:
-		printf(" thang 7 nam %d co: 31 ngay", y);
-		break;
-	case 8:
-		printf(" thang 8 nam %d co: 31 ngay", y);
-		break;
 	case 9:
-		printf(" thang 9 nam %d co: 30 ngay", y);
-		break;
-	case 10:
-		printf(" thang 10 nam %d co: 31 ngay", y);
-		break;
 	case 11:
-		printf(" thang 11 nam %d co: 30 ngay", y);
+		printf(" thang %d nam %d co: 30 ngay",m, y);
 		break;
-	case 12:
-		printf(" thang 12 nam %d co: 31 ngay", y);
-		break;
+	
 
 	}
 	if (m == 2 && x4 == 0 && x100 != 0 || x400 == 0)
@@ -293,11 +276,7 @@ void bt13()
 	{
 		printf(" thang 2 nam %d co: 28 ngay.");
 	}
-	else
-	{
-		printf(" invailid data!!!");
-
-	}
+	
 }
 //Bài 14. Nhập vào ba số a, b, c. Kiểm tra ba số có thể tạo thành ba cạnh của một tam giác hay không.
 
@@ -628,5 +607,5 @@ void bt20()
 }
 void main()
 {
-	bt20();
+	bt13();
 }
